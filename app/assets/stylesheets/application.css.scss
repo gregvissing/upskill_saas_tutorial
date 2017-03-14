@@ -14,9 +14,9 @@
  *= require_self
  */
  
-@import 'bootstrap-sprockets';
-@import 'bootstrap';                // Import Bootstrap library
-@import "font-awesome-sprockets";
+@import 'bootstrap-sprockets';     // provides individual Bootstrap Javascript files 
+@import 'bootstrap';               // Import Bootstrap library
+@import "font-awesome-sprockets";  // sprockets assets helper Sass functions used for finding the proper path to the font file
 @import "font-awesome";            // Import Font Awesome library
 
 // Typography Styles
