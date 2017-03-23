@@ -2,10 +2,10 @@ class ContactMailer < ActionMailer::Base
     default to: 'greg.vissing@gmail.com'
     
     def contact_email(name, email, body)
-       @name = name
-       @email = email
-       @body = body
+        @name = name
+        @email = email
+        @body = body
        
-       mail(from: email, subject: 'Contact Form Message')
+        mail(from: email, subject: 'Contact Form Message')
     end
 end

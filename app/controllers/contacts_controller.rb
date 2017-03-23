@@ -3,7 +3,7 @@ class ContactsController < ApplicationController
         @contact = Contact.new
     end
     
-    def create                      # create action
+    def create                      # create/save action
         @contact = Contact.new(contact_params)  # {name: 'asdf', email: 'asdf', comments: 'asdf'}
         if @contact.save
             flash[:success] = "Message sent."
