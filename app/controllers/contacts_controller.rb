@@ -25,7 +25,7 @@ class ContactsController < ApplicationController
             ContactMailer.contact_email(name, email, body).deliver
         
             # Store success message in flash hash
-            # and redirect to the new action
+            # and redirect to the new action 
             flash[:success] = "Message sent."
             redirect_to new_contact_path
         

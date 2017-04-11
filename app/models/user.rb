@@ -4,6 +4,6 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
   
-  # each user belongs to a plan       
+  # each user belongs to a plan        
   belongs_to :plan
 end
